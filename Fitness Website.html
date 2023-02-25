@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>I FIT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="#home">Contact</a>
+        <a href="#news">About Us</a> 
+        <div class="dropdown">
+          <button class="dropbtn">Home
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Workout Videos</a> 
+            <a href="#">Healthy Diet</a> 
+            <a href="#">Membership</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img src="Workout.jpg" style="width: 100%; height: 500px;">
+          <div class="text">At Home Workout Tutorials</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img src="food2.webp" style="width:100%; height: 500px;">
+          <div class="text">Healthy Food Diet Tips</div>
+        </div>
+      
+        
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        
+      </div>
+      
+      <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+      </script>
+      
+      <h1>IFIT: Your Ultimate Guide For Health and Fitness</h1>
+      <p>Welcome to IFIT!, where we believe that you don't need a gym membership or fancy equipment to get fit and healthy. Our goal is to provide you with effective, convenient, and affordable workout solutions that you can do anytime, anywhere, with minimal equipment or no equipment at all.</p><br>
+      <p>Our workout tutorials are designed by certified trainers who understand the challenges of working out at home and know how to create workouts that are fun, challenging, and effective. Whether you're looking to build strength, burn fat, improve your flexibility, or simply stay active and healthy, we have a program that will meet your needs and help you achieve your goals.</p>
+
+     
+
+     
+</body>
+</html>
