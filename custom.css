@@ -171,4 +171,39 @@ p{
   font-family:Arial, Helvetica, sans-serif;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  overflow: auto;
+  padding-left: 150px;
+}
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+ 
+  
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+   
+    
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+img.hover-shadow {
+  transition: 0.5s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
+}
 
