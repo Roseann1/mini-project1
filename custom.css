@@ -144,6 +144,7 @@
 
 h1 {
   text-align: center;
+  color: rgb(177, 112, 15);
 }
 
 p{
@@ -152,7 +153,7 @@ p{
   padding-right: 150px;
   font-size: 18px;
   text-indent: 50px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
